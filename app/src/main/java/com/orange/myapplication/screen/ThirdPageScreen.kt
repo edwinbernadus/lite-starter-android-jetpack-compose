@@ -16,16 +16,14 @@ fun ThirdPageScreen() {
         fontSize = 30.sp,
         color = Color.White
     )
-//    hint_create_button
     Button(
         onClick = {
-            simpleNavService.goTo("/list_table")
-//            simpleNavService.goBack()
+            simpleNavService.goBack()
         },
         colors = ButtonDefaults.buttonColors(backgroundColor = Color.DarkGray)
     )
 
     {
-        Text(text = "Go To List Table 2", color = Color.White)
+        Text(text = "Go Back", color = Color.White)
     }
 }

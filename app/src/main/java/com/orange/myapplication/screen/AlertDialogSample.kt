@@ -33,7 +33,16 @@ fun AlertDialogSample(album : Album) {
                         Text(text = "${album.id} - ${album.title}")
                     },
                     text = {
-//                        Text("Here is a text ")
+                        Text(text = "user id: ${album.userId}")
+                    },
+                    dismissButton = {
+                        Button(
+
+                            onClick = {
+                                openDialog.value = false
+                            }) {
+                            Text("Dismiss")
+                        }
                     },
                     confirmButton = {
                         Button(
@@ -44,15 +53,7 @@ fun AlertDialogSample(album : Album) {
                             Text("Go To Next Page")
                         }
                     },
-                    dismissButton = {
-                        Button(
 
-                            onClick = {
-                                openDialog.value = false
-                            }) {
-                            Text("This is the dismiss Button")
-                        }
-                    }
                 )
             }
         }

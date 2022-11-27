@@ -5,9 +5,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import java.util.*
 
-
-
-//var prevRoute = ""
 val routes : LinkedList<String> = LinkedList<String>()
 var currentRoute by mutableStateOf("/")
 
@@ -16,12 +13,9 @@ class SimpleNavService {
     fun goBack(): Boolean {
         routes.removeAt(routes.size -1)
 
-//        var last = routes.last()
-//        routes.remove(last)
-
         if (routes.size > 0){
-            var last2 = routes.last()
-            currentRoute = last2
+            var lastItem = routes.last()
+            currentRoute = lastItem
         }
 
         if (routes.size == 0){
