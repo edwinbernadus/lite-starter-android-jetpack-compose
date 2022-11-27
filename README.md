@@ -1,1 +1,2 @@
-# lite-starter-android-jetpack-compose
+# starter-template-android-jetpack-compose
+
