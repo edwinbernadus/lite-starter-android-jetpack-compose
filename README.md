@@ -1,7 +1,7 @@
 # starter-template-android-jetpack-compose
 
 ## Getting Started
-** read this first **  
+**read this first**  
 https://github.com/edwinbernadus/starter-template-frontend-framework
 
 
